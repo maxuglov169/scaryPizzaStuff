@@ -99,6 +99,7 @@
       sideNav.addEventListener("click", sideMenuOpen(isSideMenuOpen));
 
       function sideMenuOpen(isMenuOpen) {
+        event.preventDefault();
         if (isMenuOpen) {
           document.getElementById("main").style.marginLeft = "0%";
           document.getElementById("sideNav").style.display = "none";
