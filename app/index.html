@@ -1,116 +1,127 @@
 <!doctype html>
 <html>
-  <head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="w3.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <title>noName pizza</title>
+</head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <title>noName pizza</title>
+<body>
 
-  </head>
-
-  <body>
-
-    <div id="allPage">
-
-      <!--ЖЕЛТОЕ МЕНЮ СВЕРХУ СТРАНИЦЫ-->
-      <div class="w3-container w3-yellow w3-large w3-card-4" style="opacity: 0.8; padding: 0">
-
-        <!--КОНТЕЙНЕР ДЛЯ РАЗДЕЛЕНИЯ МЕНЮ ПОПОЛАМ-->
-        <div class="w3-row w3-hide-small">
-
-          <!--ЛЕВАЯ ПОЛОВИНА МЕНЮ - ПУНКТЫ МЕНЮ-->
-          <div class="w3-half w3-left">
-
-            <ul class="w3-navbar w3-hide-small">
-              <li><a href='' class='w3-hover-orange w3-opennav' id="openNav">&#9776;</a></li>
-              <li><a href='' class='w3-hide-600 w3-padding w3-hover-orange w3-red'>МЕНЮ</a></li>
-              <li><a href='' class='w3-hide-700 w3-padding w3-hover-orange'>СОЗДАТЬ ПИЦЦУ</a></li>
-              <li><a href='' class='w3-hide-800 w3-padding w3-hover-orange'>КОРЗИНА</a></li>
-              <li><a href='' class='w3-hide-900 w3-padding w3-hover-orange'>О НАС</a></li>
-            </ul>
-
-          </div>
-
-          <!--ПРАВАЯ ПОЛОВИНА МЕНЮ - РЕГИСТРАЦИЯ И ПОИСК-->
-          <div class="w3-half w3-right">
-
-            <ul class="w3-navbar w3-right">
-              <li class="w3-padding w3-hover-orange w3-card-4" style="cursor: pointer"><i class="fa fa-key w3-xlarge"></i></li>
-              <li class="w3-padding w3-hover-orange" style="cursor: pointer"><i class="fa fa-search w3-xlarge"></i></li>
-            </ul>
-
-          </div>
-
-        </div>
-
-        <!--
-        <div class="w3-row w3-hide-medium w3-hide-large">
-
-          <div class="w3-half w3-left">
-
-            <div class="w3-navbar">
-              <div class="w3-col s3"><i class="fa fa-calendar-o w3-xlarge"></i></div>
-              <div class="w3-col s3"><i class="fa fa-puzzle-piece w3-xlarge"></i></div>
-              <div class="w3-col s3"><i class="fa fa-shopping-cart w3-xlarge"></i></div>
-              <div class="w3-col s3"><i class="fa fa-comments-o w3-xlarge"></i></div>
-            </div>
-
-          </div>
-
-          <div class="w3-half">
-
-            <ul class="w3-navbar">
-              <li class="w3-padding w3-hover-orange w3-card-4" style="cursor: pointer"><i class="fa fa-key w3-xlarge"></i></li>
-              <li class="w3-padding w3-hover-orange" style="cursor: pointer"><i class="fa fa-search w3-xlarge"></i></li>
-            </ul>
-
-          </div>
-        </div>
-        -->
-
-      </div>
-      <!--ЖЕЛТОЕ МЕНЮ СВЕРХУ СТРАНИЦЫ-->
-
-      <nav class="w3-sidenav w3-white w3-card-2" style="display:none" id="sideNav">
-        <a href="#" class="w3-closenav w3-large">Close &times;</a>
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-        <a href="#">Link 4</a>
-        <a href="#">Link 5</a>
-      </nav>
-
-      <div id="main">
-
+<div id="allPage">
+  <!--ЖЕЛТОЕ МЕНЮ СВЕРХУ СТРАНИЦЫ-->
+  <div class="w3-container w3-yellow w3-large w3-card-4" style="opacity: 0.8; padding: 0">
+    <!--КОНТЕЙНЕР ДЛЯ РАЗДЕЛЕНИЯ МЕНЮ ПОПОЛАМ-->
+    <div class="w3-row w3-hide-small">
+      <!--ЛЕВАЯ ПОЛОВИНА МЕНЮ - ПУНКТЫ МЕНЮ-->
+      <div class="w3-half w3-left">
+        <ul class="w3-navbar w3-hide-small">
+          <li><a href='' class='w3-hover-orange w3-opennav' id="openNav">&#9776;</a></li>
+          <li><a href='' class='w3-hide-600 w3-padding w3-hover-orange w3-red'>МЕНЮ</a></li>
+          <li><a href='' class='w3-hide-700 w3-padding w3-hover-orange'>СОЗДАТЬ ПИЦЦУ</a></li>
+          <li><a href='' class='w3-hide-800 w3-padding w3-hover-orange'>КОРЗИНА</a></li>
+          <li><a href='' class='w3-hide-900 w3-padding w3-hover-orange'>О НАС</a></li>
+        </ul>
 
       </div>
 
+      <!--ПРАВАЯ ПОЛОВИНА МЕНЮ - РЕГИСТРАЦИЯ И ПОИСК-->
+      <div class="w3-half w3-right">
+        <ul class="w3-navbar w3-right">
+          <li class="w3-padding w3-hover-orange w3-card-4" style="cursor: pointer"><i class="fa fa-key w3-xlarge"></i>
+          </li>
+          <li class="w3-padding w3-hover-orange" style="cursor: pointer"><i class="fa fa-search w3-xlarge"></i></li>
+        </ul>
+
+      </div>
 
     </div>
 
-    <script>
+  </div>
 
-      var sideNav = document.getElementById("sideNav");
-      var isSideMenuOpen = false;
+  <!--ЖЕЛТОЕ МЕНЮ СВЕРХУ СТРАНИЦЫ-->
 
-      sideNav.addEventListener("click", sideMenuOpen(isSideMenuOpen));
+  <nav class="w3-sidenav w3-card-2 w3-animate-left w3-accordion w3-opacity" style="display:none" id="mySidenav">
+    <a href="#" onclick="openAccordeon('contPizza')" id="dropPizza">Пицца  <i class="fa fa-caret-down"></i></a>
+      <div id="contPizza" class="w3-accordion-content w3-container">
+        <a href="#" class="w3-small w3-slim">Пицца "Четыре сезона" <span class="w3-tag w3-red">Hot</span></a>
+        <a href="#" class="w3-small w3-slim">Пицца "Пять сезонов"</a>
+        <a href="#" class="w3-small w3-slim">Пицца "Зима близко" <span class="w3-tag w3-blue">Cold</span></a>
+      </div>
 
-      function sideMenuOpen(isMenuOpen) {
-        event.preventDefault();
-        if (isMenuOpen) {
-          document.getElementById("main").style.marginLeft = "0%";
-          document.getElementById("sideNav").style.display = "none";
-          isSideMenuOpen = false;
-        } else {
-          document.getElementById("main").style.marginLeft = "20%";
-          document.getElementById("sideNav").style.width = "20%";
-          document.getElementById("sideNav").style.display = "block";
-          isSideMenuOpen = true;
-        }
-      }
-    </script>
-  </body>
+    <a href="#" onclick="openAccordeon('contSalat')" id="dropSalat">Салаты  <i class="fa fa-caret-down"></i></a>
+      <div id="contSalat" class="w3-accordion-content w3-container">
+        <a href="#" class="w3-small w3-slim">Салат "Цезарь"</a>
+        <a href="#" class="w3-small w3-slim">Салат "Наполеон"</a>
+        <a href="#" class="w3-small w3-slim">Салат "Чингизхан"</a>
+      </div>
+
+    <a href="#" onclick="openAccordeon('contJuice')" id="dropJuice">Соки  <i class="fa fa-caret-down"></i></a>
+    <div id="contJuice" class="w3-accordion-content w3-container">
+      <a href="#" class="w3-small w3-slim">Апельсиновый сок</a>
+      <a href="#" class="w3-small w3-slim">Яблочный сок</a>
+    </div>
+
+    <a href="#" onclick="openAccordeon('contAlc')" id="dropAlc">Алкоголь  <i class="fa fa-caret-down"></i></a>
+    <div id="contAlc" class="w3-accordion-content w3-container">
+      <a href="#" class="w3-small w3-slim">Коктейль "Отвертка"</a>
+      <a href="#" class="w3-small w3-slim">Коктейль "Тепловая смерть Вселенной"</a>
+    </div>
+
+    <a href="#" onclick="openAccordeon('contWeapon')" id="dropWeapon">Инопланетное оружие  <i class="fa fa-caret-down"></i></a>
+    <div id="contWeapon" class="w3-accordion-content w3-container">
+      <a href="#" class="w3-small w3-slim">Квантовый дезинтегратор <span class="w3-badge w3-green">1</span></a>
+      <a href="#" class="w3-small w3-slim">Лучевой пульверизатор <span class="w3-badge w3-yellow">2</span></a>
+      <a href="#" class="w3-small w3-slim">Машина судного дня <span class="w3-badge w3-black">3</span></a>
+    </div>
+  </nav>
+
+  <div id="main">
+
+  </div>
+
+</div>
+
+<script type="text/javascript">
+  var mySideNav = document.getElementById("mySidenav");
+  var main = document.getElementById("main");
+  var openNavBtn = document.getElementById("openNav");
+
+
+
+  var isOpened = false;
+
+  openNavBtn.addEventListener("click", function (e) {
+
+    e.preventDefault();
+
+    if (isOpened) {
+      main.style.marginLeft = "0%";
+      mySideNav.style.display = "none";
+      isOpened = false;
+      openNavBtn.className = openNavBtn.className.replace(" w3-red", "");
+    } else {
+      main.style.marginLeft = "23%";
+      mySideNav.style.width = "23%";
+      mySideNav.style.display = "block";
+      openNavBtn.className += " w3-red";
+      isOpened = true;
+    }
+
+  });
+
+  function openAccordeon(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+
+</script>
+</body>
 </html>
